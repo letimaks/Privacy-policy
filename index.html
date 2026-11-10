@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Політика конфіденційності розширення Google Chrome «Арава ВНАУ».">
+  <title>Політика конфіденційності — Арава ВНАУ</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #101b35;
+      --blue: #315bd6;
+      --ink: #202b42;
+      --muted: #66728a;
+      --line: #e5eaf2;
+      --surface: #fff;
+      --page: #f3f6fb;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--page); color: var(--ink);
+      font: 16px/1.72 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .topbar { background: var(--navy); color: white; padding: 17px 24px; }
+    .topbar-inner {
+      width: min(100%, 960px); margin: auto; display: flex;
+      align-items: center; gap: 12px; font-weight: 700; letter-spacing: .02em;
+    }
+    .brand-mark {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: linear-gradient(145deg, #5278f0, #2948ad);
+      color: white; font-size: 15px; box-shadow: 0 5px 16px #0003;
+    }
+    main { width: min(100% - 32px, 860px); margin: 54px auto 72px; }
+    .document {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 20px;
+      padding: clamp(25px, 6vw, 58px); box-shadow: 0 18px 55px rgba(26, 43, 77, .07);
+    }
+    .eyebrow {
+      color: var(--blue); font-size: 12px; font-weight: 800;
+      letter-spacing: .13em; text-transform: uppercase; margin: 0 0 12px;
+    }
+    h1 {
+      color: var(--navy); font-size: clamp(29px, 5vw, 42px);
+      line-height: 1.2; letter-spacing: -.035em; margin: 0;
+    }
+    .effective { color: var(--muted); font-size: 14px; margin: 13px 0 0; }
+    .intro { color: var(--muted); font-size: 17px; margin: 17px 0 0; max-width: 690px; }
+    .rule { height: 1px; background: var(--line); margin: 32px 0; }
+    section { margin-top: 30px; }
+    h2 {
+      display: flex; align-items: center; gap: 12px; color: var(--navy);
+      font-size: 20px; line-height: 1.35; margin: 0 0 12px; letter-spacing: -.015em;
+    }
+    .number {
+      flex: 0 0 32px; width: 32px; height: 32px; display: inline-grid;
+      place-items: center; border-radius: 9px; background: #edf2ff;
+      color: var(--blue); font-size: 14px; font-weight: 800;
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 9px 0 0; padding-left: 23px; }
+    li { padding-left: 4px; margin: 7px 0; }
+    li::marker { color: var(--blue); }
+    a { color: var(--blue); text-decoration: none; font-weight: 650; }
+    a:hover { text-decoration: underline; }
+    .contact {
+      display: inline-flex; align-items: center; gap: 9px; padding: 11px 15px;
+      border: 1px solid #dce5ff; border-radius: 11px; background: #f5f7ff; margin-top: 4px;
+    }
+    .notice {
+      margin-top: 18px; padding: 16px 18px; border: 1px solid var(--line);
+      border-left: 3px solid var(--blue); border-radius: 10px; background: #f8faff;
+      color: #4d5a72; font-size: 14px;
+    }
+    footer { text-align: center; color: #7a8599; font-size: 13px; padding: 22px 16px 34px; }
+    @media (max-width: 600px) {
+      .topbar { padding: 14px 18px; }
+      main { width: min(100% - 20px, 860px); margin: 22px auto 36px; }
+      .document { border-radius: 15px; padding: 25px 21px; }
+      .intro { font-size: 16px; }
+      h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-mark" aria-hidden="true">А</div>
+      <span>АРАВА ВНАУ</span>
+    </div>
+  </header>
+
+  <main>
+    <article class="document">
+      <p class="eyebrow">Документація розширення</p>
+      <h1>Політика конфіденційності</h1>
+      <p class="effective">Дата набрання чинності: 10 листопада 2026 року</p>
+      <p class="intro">Ця Політика пояснює, які дані використовує розширення <strong>«Арава ВНАУ»</strong>, з якою метою та як вони обробляються.</p>
+      <div class="rule"></div>
+
+      <section>
+        <h2><span class="number">01</span> Як працює розширення</h2>
+        <p>«Арава ВНАУ» допомагає отримувати відповіді штучного інтелекту на основі тексту вебсторінки. Користувач виділяє текст і запускає обробку доступним способом — через гарячу клавішу або контекстне меню. Якщо відповідна функція ввімкнена, розширення також може використовувати текст сторінки.</p>
+      </section>
+
+      <section>
+        <h2><span class="number">02</span> Які дані обробляються</h2>
+        <ul>
+          <li><strong>Текст вебсторінки:</strong> виділений користувачем фрагмент або текст сторінки, якщо користувач увімкнув і використовує таку функцію.</li>
+          <li><strong>Ключ API Groq:</strong> якщо користувач налаштував власний ключ, він використовується для авторизації запиту до Groq.</li>
+          <li><strong>Налаштування розширення:</strong> параметри вигляду вікна, прозорості, гарячих клавіш та інші параметри, потрібні для роботи.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="number">03</span> Передавання даних третім сторонам</h2>
+        <p>Коли користувач запускає AI-запит, відповідний текст передається до API сервісу <strong>Groq</strong> для обробки та формування відповіді. Ключ API, якщо він використовується, передається Groq як облікові дані авторизації запиту.</p>
+        <p>Обробка даних сервісом Groq регулюється його власними умовами та політикою конфіденційності: <a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener noreferrer">Політика конфіденційності Groq</a>.</p>
+        <div class="notice">Не надсилайте через розширення паролі, платіжні реквізити, медичні відомості або іншу конфіденційну інформацію, якщо не бажаєте передавати її зовнішньому AI-сервісу.</div>
+      </section>
+
+      <section>
+        <h2><span class="number">04</span> Локальне зберігання</h2>
+        <p>Налаштування розширення та введений користувачем ключ API можуть зберігатися у сховищі браузера Chrome, щоб зберігати конфігурацію між запусками. Не використовуйте спільний або ненадійний профіль браузера для зберігання власного API-ключа. Локальне зберігання в браузері не слід вважати захищеним сховищем секретів.</p>
+      </section>
+
+      <section>
+        <h2><span class="number">05</span> Мета використання даних</h2>
+        <p>Дані використовуються для виконання запиту, отримання відповіді від AI-сервісу та забезпечення роботи налаштувань розширення. Текст сторінки передається зовнішньому сервісу лише в межах запиту, який запускає користувач.</p>
+      </section>
+
+      <section>
+        <h2><span class="number">06</span> Контроль користувача</h2>
+        <ul>
+          <li>Користувач самостійно обирає текст і запускає його обробку.</li>
+          <li>Користувач може не запускати AI-запит, якщо не бажає передавати текст до Groq.</li>
+          <li>Користувач може видалити збережений ключ API та налаштування через засоби керування розширенням або очищення даних розширення в Chrome.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="number">07</span> Зміни до політики</h2>
+        <p>Політика може оновлюватися у разі зміни функцій розширення або способів обробки даних. Актуальна редакція публікується на цій сторінці із зазначенням дати набрання чинності.</p>
+      </section>
+
+      <section>
+        <h2><span class="number">08</span> Контакт</h2>
+        <p>З питань щодо цієї Політики або роботи розширення:</p>
+        <a class="contact" href="https://t.me/Cryzume" target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">✈</span> Telegram — @Cryzume
+        </a>
+      </section>
+
+      <div class="notice">«Арава ВНАУ» — розширення для Google Chrome. Ця сторінка описує обробку даних розширення та не замінює політику конфіденційності сторонніх сервісів.</div>
+    </article>
+  </main>
+
+  <footer>© <span id="year"></span> Арава ВНАУ · Політика конфіденційності</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
